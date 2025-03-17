@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    max-width: 1140px;
+    width: 100%;
+    height: calc(100vh - 140px);
+    margin: 70px auto;
+    gap: 20px;
+    align-items: end;
+    position: relative;
+}
+
+.image-main {
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 65vh;
+    position: relative;
+}
+
+.image-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-section {
+    grid-row: 2 / 3;
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: start;
+}
+
+button {
+    background-color: #c2b6a3;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    border-radius: 20px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.image-gallery {
+    grid-row: 2 / 3;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    width: 50%;
+    align-self: end;
+}
+
+.image-gallery img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
